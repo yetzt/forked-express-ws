@@ -19,7 +19,7 @@
   ],
   "license": "BSD-2-Clause",
   "dependencies": {
-    "esm": "^3.0.84",
+    "esm": "^3.2.25",
     "ws": "^7.4.6"
   },
   "peerDependencies": {
@@ -45,9 +45,9 @@
   },
   "homepage": "https://github.com/HenningM/express-ws",
   "devDependencies": {
-    "eslint": "^7.27.0",
+    "eslint": "^7.28.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-import": "^2.23.4",
     "express": "^4.17.1"
   }
 }
