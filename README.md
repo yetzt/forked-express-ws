@@ -1,10 +1,12 @@
-# express-ws [![Dependency Status](https://snyk.io/test/github/henningm/express-ws/badge.svg)](https://snyk.io/test/github/henningm/express-ws)
+# express-ws [![Dependency Status](https://snyk.io/test/github/yetzt/forked-express-ws/badge.svg)](https://snyk.io/test/github/yetzt/forked-express-ws)
+
+Forked from [express-ws](https://github.com/HenningM/express-ws)
 
 [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) endpoints for [Express](http://expressjs.com/) applications. Lets you define WebSocket endpoints like any other type of route, and applies regular Express middleware. The WebSocket support is implemented with the help of the [ws](https://github.com/websockets/ws) library.
 
 ## Installation
 
-`npm install --save express-ws`
+`npm install --save @yetzt/express-ws`
 
 ## Usage
 
@@ -13,7 +15,7 @@ __Full documentation can be found in the API section below. This section only sh
 Add this line to your Express application:
 
 ```javascript
-var expressWs = require('express-ws')(app);
+var expressWs = require('@yetzt/express-ws')(app);
 ```
 
 __Important: Make sure to set up the `express-ws` module like above *before* loading or defining your routers!__ Otherwise, `express-ws` won't get a chance to set up support for Express routers, and you might run into an error along the lines of `router.ws is not a function`.
@@ -47,7 +49,7 @@ app.use("/ws-stuff", router);
 ```javascript
 var express = require('express');
 var app = express();
-var expressWs = require('express-ws')(app);
+var expressWs = require('@yetzt/express-ws')(app);
 
 app.use(function (req, res, next) {
   console.log('middleware');
